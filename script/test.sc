@@ -40,4 +40,20 @@ resta(7,1)
 division(7,1)
 
 //Unit
+def main(args: Array[String]){
+  print("Hola mundo")
+}
+main(Array())
+
+//Para usar el operador asignación '='
+def main(arg: Array[String]): Unit = {
+  println("Hola mundo")
+}
+main(Array())
+
+//Declaración de objetos
+object MiObjeto{
+  def sumar(a: Int, b:Int): Int = a + b
+  def restar(a: Int, b:Int): Int = a - b
+}
 

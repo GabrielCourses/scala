@@ -74,5 +74,46 @@ scala> def <name_function>(argumentos) = <funcion>
 
 En Scala tenemos distintos tipos de datos: <code>int</code>, <code>double</code>, <code>float</code>, <code>long</code>, <code>String</code>, <code>boolean</code>.
 
-Pero en Scala tenemos un tipo de dato que es equivalente al <code>void</code> de otros lenguajes de programación. En Scala se le llama <code>Unit</code>
+Pero en Scala tenemos un tipo de dato que es equivalente al <code>void</code> de otros lenguajes de programación. En Scala se le llama <code>Unit</code>. Y es posible hacer funciones en Scala que devuelvan un <code>Unit</code>, es decir, que no devuelvan algo. Serían funciones que únicamente ejecutan código pero no devuelven algún resultado.
+
+En scala tenemos la función llamada main, devuelve un Unit, es decir, no devuelve algo.
+
+```
+def main(args: Array[String]){
+	println("Hola mundo")
+	}
+main(Array())
+
+// para poder usuar el operador de asignación '='
+def main(args: Array[String]): Unit = {
+	print("Hola mundo")
+	}
+main(Array())
+```
+
+
+### Presentación de los objetos singleton
+
+Concepto de «clase», en Scala, parte de la OOP. En Scala podemos hablar de dos tipos de objeto, típicamente conocemos los objetos instanciados de la clase, los cuales comparten atributos y métodos como es el caso de Java.
+
+A diferencia de Java, en Scala hay algunas cosas que las clases no tienen, como por ejemplo las variables estáticas, o los métodos estáticos, o todo cualquier operación que supuestamente pueda funcionar sin estado.
+
+En Java, por ejemplo, podemos hacer variables estáticas, campos estáticos, métodos estáticos, cosas que de alguna manera nosotros podemos ejecutar sin tener que instancias. Y eso Scala no lo permite. En Scala, si creamos una clase, todo lo que puede tener son métodos que trabajen con instancias de las clases.
+
+Sin embargo, a cambio, Scala tiene un concepto, que son los objetos de tipo singleton. Que son objetos como tal, de hecho utilizan la palabra clave object; se parecen a la clases, aunque sin embargo, no tienen instancias. Lo único que pueden hacer es contener operaciones que pueden ser llamadas sin tener que instanciar.
+
+```
+//Declaración de objetos
+object MiObjeto{
+  def sumar(a: Int, b:Int): Int = a + b
+  def restar(a: Int, b:Int): Int = a - b
+}
+```
+
+Ahora puedo mandar llamar los métodos del objeto <code>MiObjeto</code> 
+
+![](https://raw.githubusercontent.com/GabrielCourses/scala/main/image/mi_objeto.png)
+
+
+
 
