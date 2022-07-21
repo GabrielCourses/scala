@@ -19,7 +19,7 @@
 - Compila contra la JVM y es compatible con Java.
 - **Es de los más valorados.** Segundo lenguaje de programación mejor pagado según StackOverflow Developer Survey 2016.
 
-**¿De dṕnde sale Scala?**
+**¿De dónde sale Scala?**
 
 - Suiza, 2003.
 - Desarrollando inicialmente por Marin Odersky.
@@ -114,6 +114,33 @@ Ahora puedo mandar llamar los métodos del objeto <code>MiObjeto</code>
 
 ![](https://raw.githubusercontent.com/GabrielCourses/scala/main/image/mi_objeto.png)
 
+### Editando y compilando archivos
+
+Crearemos una carpeta en nuestro ordenador, en mi caso la guardaere con el nombre test en Desktop y dentro del el creamos el archivo HolaMundo.scala
+
+```
+object HolaMundo {
+	def main(args: Array[String]): Unit = {
+		println("Hola mundo")
+		}
+	}
+```
+
+Y ejecutamos en consola:
+
+```
+$ scala HolaMundo.scala
+```
+
+Para compilar un archivo:
+
+```
+$ scalac HolaMundo.scala
+```
+
+Aunque en la practica es poco común crear o compilar las clases de esta manera. Para ello tenemos una herramiena <code>sbt</code>.
+
+### Descargar e instalar Scala IDE
 
 
 

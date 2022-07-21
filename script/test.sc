@@ -56,4 +56,10 @@ object MiObjeto{
   def sumar(a: Int, b:Int): Int = a + b
   def restar(a: Int, b:Int): Int = a - b
 }
+MiObjeto.sumar(12, 3)
+
+object Aplicacion{
+  def main(arg: Array[String]): Unit = { println("Hola mundo") }
+  }
+Aplicacion.main(Array())
 
